@@ -1,54 +1,145 @@
-<div class="card">
-  <h2>School Certifications</h2>
-  <ul style="list-style:none; padding:0; margin:0; text-align:center;">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Lino Christopher Rodelo · CV & Certifications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --border:#eee; --text:#111; --muted:#666; --brand:#6f2dbd;
+      --card:#fff; --shadow:0 2px 14px rgba(0,0,0,.06); --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#fff;color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    header{padding:48px 20px;text-align:center}
+    h1{margin:0 0 6px;font-size:2.2rem}
+    .tag{color:#7a7a7a}
+    .wrap{max-width:980px;margin:0 auto;padding:0 20px 48px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);margin:20px 0}
+    h2{margin:0 0 14px}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .btn{display:inline-block;margin:6px 8px 6px 0;padding:10px 16px;border:1px solid var(--border);border-radius:10px}
+    .list-badges{list-style:none;padding:0;margin:0}
+    .list-badges li{display:flex;align-items:center;gap:14px;margin:14px 0}
+    .badge{width:72px;height:72px;border-radius:8px;object-fit:cover;flex:none}
+    /* centered grid for school certs */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;justify-items:center;align-items:start}
+    .grid-item{text-align:center}
+    .grid-item .badge{width:96px;height:96px;margin-bottom:8px}
+    footer{border-top:1px solid var(--border);color:var(--muted);text-align:center;padding:28px;margin-top:24px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lino Christopher Rodelo</h1>
+    <div class="tag">Technical Support Engineer II · Oracle · EN/ES</div>
+  </header>
 
-    <!-- Credly School Badge -->
-    <li style="display:inline-block; margin:14px; text-align:center;">
-      <a href="school-cert.png" target="_blank" rel="noopener">
-        <img src="school-cert.png" alt="School Certification Badge" width="100" height="100" loading="lazy">
-      </a>
-      <div>School Certification (Credly) — 
-        <a href="https://www.credly.com/badges/0abf79fe-4102-4a87-a9b1-354c248d8fdf/public_url" target="_blank" rel="noopener">Verify</a>
+  <div class="wrap">
+
+    <!-- Resume / CV -->
+    <section class="card">
+      <h2>Resume / CV</h2>
+      <p>
+        <a class="btn" href="Rodelo_L_CV_09_17_2025_EN.pdf" target="_blank" rel="noopener">Download CV (English)</a>
+        <a class="btn" href="Rodelo_L_CV_09_17_2025_PT.pdf" target="_blank" rel="noopener">Baixar CV (Português)</a>
+      </p>
+    </section>
+
+    <!-- Professional Certifications (Aconex) -->
+    <section class="card">
+      <h2>Certifications (Professional)</h2>
+      <ul class="list-badges">
+        <li>
+          <a href="aconex-associate.png" target="_blank" rel="noopener">
+            <img class="badge" src="aconex-associate.png" alt="Oracle Aconex Accredited Associate">
+          </a>
+          <span>Oracle Aconex Accredited Associate — <a href="https://mylearn.oracle.com/ou/learning-path/aconex-associate/77697" target="_blank" rel="noopener">Verify</a></span>
+        </li>
+        <li>
+          <a href="aconex-professional.png" target="_blank" rel="noopener">
+            <img class="badge" src="aconex-professional.png" alt="Oracle Aconex Accredited Professional">
+          </a>
+          <span>Oracle Aconex Accredited Professional — <a href="https://mylearn.oracle.com/ou/learning-path/aconex-professional/80554" target="_blank" rel="noopener">Verify</a></span>
+        </li>
+        <li>
+          <a href="aconex-specialist.png" target="_blank" rel="noopener">
+            <img class="badge" src="aconex-specialist.png" alt="Oracle Aconex Accredited Specialist">
+          </a>
+          <span>Oracle Aconex Accredited Specialist — <a href="https://mylearn.oracle.com/ou/learning-path/aconex-specialist/83038" target="_blank" rel="noopener">Verify</a></span>
+        </li>
+      </ul>
+
+      <p>Full list with proof: <a href="Chris_Rodelo_Certifications.pdf" target="_blank" rel="noopener">Certifications PDF</a></p>
+    </section>
+
+    <!-- School Certifications (centered grid; no broken images) -->
+    <section class="card">
+      <h2>School Certifications</h2>
+      <div class="grid">
+
+        <!-- Credly badge (works) -->
+        <div class="grid-item">
+          <a href="school-cert.png" target="_blank" rel="noopener">
+            <img class="badge" src="school-cert.png" alt="CSU Global · SAS Academic (Credly)">
+          </a>
+          <div>School Certification (Credly) — <a href="https://www.credly.com/badges/0abf79fe-4102-4a87-a9b1-354c248d8fdf/public_url" target="_blank" rel="noopener">Verify</a></div>
+        </div>
+
+        <!-- NSLS 1 -->
+        <div class="grid-item">
+          <a href="nsls-badge1.png" target="_blank" rel="noopener">
+            <img class="badge" src="nsls-badge1.png" alt="NSLS Certification (1)">
+          </a>
+          <div>NSLS Certification — <a href="https://app.nsls.org/web/public/social/share/badge/GtaiFKRj2ScfSynzfQHiQG" target="_blank" rel="noopener">Verify</a></div>
+        </div>
+
+        <!-- NSLS 2 -->
+        <div class="grid-item">
+          <a href="nsls-badge2.png" target="_blank" rel="noopener">
+            <img class="badge" src="nsls-badge2.png" alt="NSLS Certification (2)">
+          </a>
+          <div>NSLS Certification — <a href="https://app.nsls.org/web/public/social/share/badge/9grjpLQwJCYpCjvjEztthC" target="_blank" rel="noopener">Verify</a></div>
+        </div>
+
+        <!-- SAS CSU Global (use the working CSU/SAS badge you already have) -->
+        <div class="grid-item">
+          <a href="school-cert.png" target="_blank" rel="noopener">
+            <img class="badge" src="school-cert.png" alt="SAS · CSU Global Academic Specialization in Statistics">
+          </a>
+          <div>SAS CSU Global Academic Specialization in Statistics — Colorado State University Global Campus</div>
+        </div>
+
+        <!-- Peregrine Web Analytics (uses Peregrine logo if present, otherwise falls back to CSU/SAS badge) -->
+        <div class="grid-item">
+          <a href="PAS-Web Analytics Certificate.pdf" target="_blank" rel="noopener">
+            <img class="badge"
+                 src="peregrine-academic-services.png"
+                 alt="Peregrine Academic Services · Web Analytics (MIS370)"
+                 onerror="this.src='school-cert.png'">
+          </a>
+          <div>Web Analytics (MIS370) — Colorado State University Global Campus, 2020 —
+            <a href="PAS-Web Analytics Certificate.pdf" target="_blank" rel="noopener">View Certificate (PDF)</a>
+          </div>
+        </div>
+
       </div>
-    </li>
+    </section>
 
-    <!-- NSLS Badge 1 -->
-    <li style="display:inline-block; margin:14px; text-align:center;">
-      <a href="nsls-badge1.png" target="_blank" rel="noopener">
-        <img src="nsls-badge1.png" alt="NSLS Certification Badge 1" width="100" height="100" loading="lazy">
-      </a>
-      <div>NSLS Certification — 
-        <a href="https://app.nsls.org/web/public/social/share/badge/GtaiFKRj2ScfSynzfQHiQG" target="_blank" rel="noopener">Verify</a>
-      </div>
-    </li>
+    <!-- Contact -->
+    <section class="card" style="text-align:center">
+      <h2>Contact</h2>
+      <p>
+        <a class="btn" href="mailto:daymelitrodelo@gmail.com">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/chrisrod16" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
 
-    <!-- NSLS Badge 2 -->
-    <li style="display:inline-block; margin:14px; text-align:center;">
-      <a href="nsls-badge2.png" target="_blank" rel="noopener">
-        <img src="nsls-badge2.png" alt="NSLS Certification Badge 2" width="100" height="100" loading="lazy">
-      </a>
-      <div>NSLS Certification — 
-        <a href="https://app.nsls.org/web/public/social/share/badge/9grjpLQwJCYpCjvjEztthC" target="_blank" rel="noopener">Verify</a>
-      </div>
-    </li>
+  </div>
 
-    <!-- SAS CSU Badge -->
-    <li style="display:inline-block; margin:14px; text-align:center;">
-      <a href="sas-csu-global-academic-specialization-in-statistics.png" target="_blank" rel="noopener">
-        <img src="sas-csu-global-academic-specialization-in-statistics.png" alt="SAS CSU Global Badge" width="100" height="100" loading="lazy">
-      </a>
-      <div>SAS CSU Global Academic Specialization in Statistics — Colorado State University Global Campus</div>
-    </li>
-
-    <!-- Peregrine Web Analytics Badge -->
-    <li style="display:inline-block; margin:14px; text-align:center;">
-      <a href="peregrine-academic-services.png" target="_blank" rel="noopener">
-        <img src="peregrine-academic-services.png" alt="Peregrine Web Analytics Badge" width="100" height="100" loading="lazy">
-      </a>
-      <div>Web Analytics (MIS370) — Colorado State University Global Campus, 2020 —
-        <a href="PAS-Web Analytics Certificate.pdf" target="_blank">View Certificate (PDF)</a>
-      </div>
-    </li>
-
-  </ul>
-</div>
+  <footer>© <span id="y"></span> Lino Christopher Rodelo</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
