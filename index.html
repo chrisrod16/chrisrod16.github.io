@@ -1,112 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lino Christopher Rodelo - Portfolio</title>
+  <meta charset="utf-8">
+  <title>Lino Christopher Rodelo · CV & Certifications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      margin: 40px; 
-      line-height: 1.6; 
-      background: #fff; 
-      color: #222;
+    :root{
+      --border:#eee; --text:#111; --muted:#666; --brand:#6f2dbd;
+      --bg:#ffffff; --card:#fff; --shadow:0 2px 14px rgba(0,0,0,.06);
+      --radius:14px;
     }
-    h1, h2, h3 { color: #111; }
-    a { color: purple; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .section { 
-      margin-bottom: 40px; 
-      padding: 20px; 
-      border: 1px solid #eee; 
-      border-radius: 8px; 
-    }
-    .cert-list { list-style: none; padding: 0; margin: 0; }
-    .cert-list li { display: flex; align-items: center; gap: 12px; margin: 14px 0; }
-    .cert-list img { border-radius: 4px; }
-    .btn { 
-      display: inline-block; 
-      margin: 6px; 
-      padding: 8px 14px; 
-      border: 1px solid purple; 
-      border-radius: 6px; 
-      color: purple; 
-    }
-    .btn:hover { background: purple; color: white; }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    header{padding:48px 20px;text-align:center}
+    h1{margin:0 0 6px;font-size:2.2rem}
+    .tag{color:#7a7a7a}
+    .wrap{max-width:980px;margin:0 auto;padding:0 20px 48px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);margin:20px 0}
+    h2{margin:0 0 14px}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .btn{display:inline-block;margin:6px 8px 6px 0;padding:10px 16px;border:1px solid var(--border);border-radius:10px}
+    .list-badges{list-style:none;padding:0;margin:0}
+    .list-badges li{display:flex;align-items:center;gap:14px;margin:14px 0}
+    .badge{width:72px;height:72px;border-radius:8px;object-fit:cover;flex:none}
+    footer{border-top:1px solid var(--border);color:var(--muted);text-align:center;padding:28px;margin-top:24px}
   </style>
 </head>
 <body>
+  <header>
+    <h1>Lino Christopher Rodelo</h1>
+    <div class="tag">Technical Support Engineer II · Oracle · EN/ES</div>
+  </header>
 
-  <h1>Lino Christopher Rodelo</h1>
-  <p>Technical Support Engineer II · Oracle · EN/ES</p>
+  <div class="wrap">
 
-  <!-- Resume -->
-  <div class="section">
-    <h2>Resume / CV</h2>
-    <a href="Rodelo_L_CV_09_17_2025_EN.pdf" class="btn">Download CV (English)</a>
-    <a href="Rodelo_L_CV_09_17_2025_PT.pdf" class="btn">Baixar CV (Português)</a>
+    <!-- Resume / CV -->
+    <section class="card">
+      <h2>Resume / CV</h2>
+      <p>
+        <a class="btn" href="Rodelo_L_CV_09_17_2025_EN.pdf" target="_blank" rel="noopener">Download CV (English)</a>
+        <a class="btn" href="Rodelo_L_CV_09_17_2025_PT.pdf" target="_blank" rel="noopener">Baixar CV (Português)</a>
+      </p>
+    </section>
+
+    <!-- Professional Certifications (Aconex) -->
+    <section class="card">
+      <h2>Certifications (Professional)</h2>
+      <ul class="list-badges">
+        <li>
+          <a href="aconex-associate.png" target="_blank" rel="noopener">
+            <img class="badge" src="aconex-associate.png" alt="Oracle Aconex Accredited Associate">
+          </a>
+          <span>Oracle Aconex Accredited Associate — <a href="https://mylearn.oracle.com/ou/learning-path/aconex-associate/77697" target="_blank" rel="noopener">Verify</a></span>
+        </li>
+        <li>
+          <a href="aconex-professional.png" target="_blank" rel="noopener">
+            <img class="badge" src="aconex-professional.png" alt="Oracle Aconex Accredited Professional">
+          </a>
+          <span>Oracle Aconex Accredited Professional — <a href="https://mylearn.oracle.com/ou/learning-path/aconex-professional/80554" target="_blank" rel="noopener">Verify</a></span>
+        </li>
+        <li>
+          <a href="aconex-specialist.png" target="_blank" rel="noopener">
+            <img class="badge" src="aconex-specialist.png" alt="Oracle Aconex Accredited Specialist">
+          </a>
+          <span>Oracle Aconex Accredited Specialist — <a href="https://mylearn.oracle.com/ou/learning-path/aconex-specialist/83038" target="_blank" rel="noopener">Verify</a></span>
+        </li>
+      </ul>
+
+      <p>Full list with proof: <a href="Chris_Rodelo_Certifications.pdf" target="_blank" rel="noopener">Certifications PDF</a></p>
+    </section>
+
+    <!-- School Certifications -->
+    <section class="card">
+      <h2>School Certifications</h2>
+      <ul class="list-badges">
+        <li>
+          <a href="school-cert.png" target="_blank" rel="noopener">
+            <img class="badge" src="school-cert.png" alt="CSU Global · SAS Academic (Credly)">
+          </a>
+          <span>School Certification (Credly) — <a href="https://www.credly.com/badges/0abf79fe-4102-4a87-a9b1-354c248d8fdf/public_url" target="_blank" rel="noopener">Verify</a></span>
+        </li>
+        <li>
+          <a href="nsls-badge1.png" target="_blank" rel="noopener">
+            <img class="badge" src="nsls-badge1.png" alt="NSLS Certification (badge 1)">
+          </a>
+          <span>NSLS Certification — <a href="https://app.nsls.org/web/public/social/share/badge/GtaiFKRj2ScfSynzfQHiQG" target="_blank" rel="noopener">Verify</a></span>
+        </li>
+        <li>
+          <a href="nsls-badge2.png" target="_blank" rel="noopener">
+            <img class="badge" src="nsls-badge2.png" alt="NSLS Certification (badge 2)">
+          </a>
+          <span>NSLS Certification — <a href="https://app.nsls.org/web/public/social/share/badge/9grjpLQwJCYpCjvjEztthC" target="_blank" rel="noopener">Verify</a></span>
+        </li>
+        <li>
+          <a href="sas-csu-global-academic-specialization-in-stat.png" target="_blank" rel="noopener">
+            <img class="badge" src="sas-csu-global-academic-specialization-in-stat.png" alt="SAS · CSU Global Academic Specialization in Statistics">
+          </a>
+          <span>SAS · CSU Global — Academic Specialization in Statistics</span>
+        </li>
+        <li>
+          <a href="PAS-Web Analytics Certificate.pdf" target="_blank" rel="noopener">
+            <img class="badge" src="peregrine-academic-services.png" alt="Peregrine Academic Services · Web Analytics (MIS370)">
+          </a>
+          <span>Web Analytics (MIS370) — Colorado State University Global Campus, 2020 — <a href="PAS-Web Analytics Certificate.pdf" target="_blank" rel="noopener">View Certificate (PDF)</a></span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        <a class="btn" href="mailto:daymelitrodelo@gmail.com">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/chrisrod16" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+
   </div>
 
-  <!-- Professional Certifications -->
-  <div class="section">
-    <h2>Certifications (Professional)</h2>
-    <ul class="cert-list">
-      <li>
-        <img src="aconex-associate.png" alt="Aconex Associate" width="72" height="72">
-        Oracle Aconex Accredited Associate — 
-        <a href="https://mylearn.oracle.com/ou/learning-path/aconex-associate/77697" target="_blank">Verify</a>
-      </li>
-      <li>
-        <img src="aconex-professional.png" alt="Aconex Professional" width="72" height="72">
-        Oracle Aconex Accredited Professional — 
-        <a href="https://mylearn.oracle.com/ou/learning-path/aconex-professional/80554" target="_blank">Verify</a>
-      </li>
-      <li>
-        <img src="aconex-specialist.png" alt="Aconex Specialist" width="72" height="72">
-        Oracle Aconex Accredited Specialist — 
-        <a href="https://mylearn.oracle.com/ou/learning-path/aconex-specialist/83038" target="_blank">Verify</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- School Certifications -->
-  <div class="section">
-    <h2>School Certifications</h2>
-    <ul class="cert-list">
-      <li>
-        <img src="school-cert.png" alt="School Certification Badge" width="72" height="72">
-        School Certification (Credly) — 
-        <a href="https://www.credly.com/badges/0abf79fe-4102-4a87-a9b1-354c248d8fdf/public_url" target="_blank">Verify</a>
-      </li>
-      <li>
-        <img src="nsls-badge1.png" alt="NSLS Badge 1" width="72" height="72">
-        NSLS Certification — 
-        <a href="https://app.nsls.org/web/public/social/share/badge/GtaiFKRj2ScfSynzfQHiQG" target="_blank">Verify</a>
-      </li>
-      <li>
-        <img src="nsls-badge2.png" alt="NSLS Badge 2" width="72" height="72">
-        NSLS Certification — 
-        <a href="https://app.nsls.org/web/public/social/share/badge/9grjpLQwJCYpCjvjEztthC" target="_blank">Verify</a>
-      </li>
-      <li>
-        <img src="sas-csu-global-academic-specialization-in-stat.png" alt="SAS CSU Global" width="72" height="72">
-        SAS CSU Global Academic Specialization in Statistics — Colorado State University Global Campus
-      </li>
-      <li>
-        <img src="peregrine-academic-services.png" alt="Peregrine Web Analytics" width="72" height="72">
-        Web Analytics (MIS370) — Colorado State University Global Campus, 2020 — 
-        <a href="PAS-Web Analytics Certificate.pdf" target="_blank">View Certificate (PDF)</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Contact -->
-  <div class="section">
-    <h2>Contact</h2>
-    <a href="https://www.linkedin.com" class="btn">LinkedIn</a>
-    <a href="https://github.com/chrisrod16" class="btn">GitHub</a>
-    <a href="mailto:daymelitrodelo@gmail.com" class="btn">Email</a>
-  </div>
-
+  <footer>© <span id="y"></span> Lino Christopher Rodelo</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
